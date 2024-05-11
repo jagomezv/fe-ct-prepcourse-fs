@@ -4,30 +4,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primer página web</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./reset.css">
 </head>
-<!-- parte visible del documento -->
 <body>
     <header>
-        <!-- Titulo principal de la pagina -->
-        <div class="contenedor" id="contenedorPrincipal">
-            <h1 class="titulo contenedor" id="tituloPrincipal">Esta es la primer página web de Julián Gómez</h1>
-            <p class="texto contenedor" id="descripcionPrincipal">En esta página podrás ver todo mi trabajo</p>
-
-            <div class="contenedor" id="imagenPrincipal">
-                <img src="./Julian tomando cafe.jpg" alt="">
-            </div>
-        </div>
-        </header>
+        <h1>Esta es la primer página web de Julián Gómez</h1>
+        <p>En esta página podrás ver todo mi trabajo</p>
+        <img src="./Julian tomando cafe.jpg" alt="">
+    </header>
+    <hr />
     <main>
-        <div class="contenedor section" id="contenedorQuienSoy" >
+        <div>
             <h2>Quien soy?</h2>
             <img src="./Julian en Villa de Leyva.jpg" alt="" height="460">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus maxime nisi amet perferendis, voluptas cum nulla reprehenderit cumque ratione quidem pariatur beatae provident ipsam. Eum voluptates rem nam minima perferendis?</p>
         </div>
 
-        <div class="contenedor section" id="contenedorGustos">
+        <div>
             <h2>Que me gusta?</h2>
             <ul>
                 <li>Disfruto la compañia de mi mascota</li>
@@ -41,7 +33,7 @@
             </ul>
         </div>
 
-        <div class="contenedor section" id="contenedorGustos">
+        <div>
             <h2>Top 3 de cosas que me gusta comer</h2>
             <ol>
                 <li>Sushi</li>
@@ -49,7 +41,7 @@
                 <li>Bandeja paisa</li>
             </ol>
         </div>
-        <div class="contenedor section" id="contenedorAmigos">
+        <div>
             <h2>Amigos del trabajo</h2>
             <ol>
                 <li><a href="./juanRojas.html">Juan Rojas</a></li>
@@ -57,15 +49,14 @@
             </ol>
         </div>
     </main>
+    <hr />
 
     <section>
-        <div class="contenedor">
-
-            <h2>Contacto</h2>
-            <p>Por favor inserta tu informacion y yo te contactare.</p>
-            <form action="">
-                <ul>
-                    <li>
+        <h2>Contacto</h2>
+        <p>Por favor inserta tu informacion y yo te contactare.</p>
+        <form action="">
+            <ul>
+                <li>
                     <label for="nombre">Nombre:</label>
                     <input type="text" name="nombre">
                 </li>
@@ -91,18 +82,16 @@
                 </li>
             </ul>
             <button>Enviar</button>
-            
+
         </form>
-    </div>
     </section>
+    <hr />
 
     <footer>
-        <div class="contenedor">
-            <h2>Agradecimientos:</h2>
-            <p>Le agradezco mucho a mi familia y a mi novia</p>
-            <img src="./irene.jpeg" alt="" width="460">
-            <img src="gifTrufaYMama.gif" alt="" width="460">
-        </div>
-        </footer>
+        <h2>Agradecimientos:</h2>
+        <p>Le agradezco mucho a mi familia y a mi novia</p>
+        <img src="./irene.jpeg" alt="" width="460">
+        <img src="gifTrufaYMama.gif" alt="" width="460">
+    </footer>
 </body>
 </html>
