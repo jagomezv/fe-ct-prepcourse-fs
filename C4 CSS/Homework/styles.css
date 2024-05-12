@@ -1,0 +1,94 @@
+/* Reseteo de los margenes y del padding de toda la pagina, se selecciona con el **/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #F7CAC9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+header {
+    background-color: #F8EDEB;
+    /* Asigna la altura del contenedor header */
+    height: 100px;
+    /* Le asigna un ancho determinado al contenedor header */
+    width: 100%;
+    /* centro el texto horizontalmente */
+    text-align: center;
+    /* Centro verticalmente al poner el texto en 100px */
+    line-height: 100px;
+    /* Agregar un borde inferior al titulo */
+    border-bottom: 1px dashed black;
+}
+
+nav {
+    /* Selecciono el fondo que deberia tener el contenedor nav.Sin embargo, no va a mostrarse porque el contenedor todavia no tiene altura y ancho*/
+    background-color: #A2C8CC;
+    height: 50px;
+    border-bottom: 1px dashed black;
+
+}
+
+nav ul li {
+    /* Hacer que la barra de navegacion se ponga hacia la izquierda */
+    float: left;
+    /* quitarle los estilos a los ul */
+    list-style: none;
+    /* Hacer que el contenido se separe 10px del borde del contenedor */
+    margin: 10px;
+    /* le quito el Azul y la sobre linea a los links */
+    text-decoration: none;
+    /* Centrar el contenido del nav */
+    line-height: 50px;
+
+}
+
+.clearfix {
+    clear: both;
+}
+
+#content {
+    float: left;
+    width: calc(80% - 80px);
+    background-color: #C5E0DC;
+    min-height: 500px;
+    padding: 40px;
+}
+
+aside {
+    float: left;
+    width: calc(20% - 20px);
+    min-height: 1349px;
+    padding: 10px;
+    background-color: #FFE5B4;
+}
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+.article {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.article h2 {
+    font-size: 25px;
+}
