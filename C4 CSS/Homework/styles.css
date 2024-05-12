@@ -44,7 +44,7 @@ nav ul li {
     /* quitarle los estilos a los ul */
     list-style: none;
     /* Hacer que el contenido se separe 10px del borde del contenedor */
-    margin: 10px;
+    margin: 0 10px 10px 10px;
     /* le quito el Azul y la sobre linea a los links */
     text-decoration: none;
     /* Centrar el contenido del nav */
