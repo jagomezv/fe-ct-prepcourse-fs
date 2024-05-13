@@ -3,6 +3,19 @@ function esPositivoOInferiorA10(a) {
    // Retorna true si es positivo y menor que 10.
    // Retorna false en caso contrario.
    // Tu código:
-}
+   let esPositivo = a > 0;
+   let inferiorA10 = a < 10;
 
+   if (esPositivo && inferiorA10) {
+      return true;
+   }
+   else {
+      return false;
+   }
+}  
+
+console.log(esPositivoOInferiorA10(1));
+console.log(esPositivoOInferiorA10(10));
+console.log(esPositivoOInferiorA10(-5));
+console.log(esPositivoOInferiorA10(-3));
 module.exports = esPositivoOInferiorA10;
