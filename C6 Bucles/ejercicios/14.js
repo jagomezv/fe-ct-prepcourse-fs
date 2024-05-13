@@ -6,6 +6,37 @@ function operadoresLogicos(num1, num2, num3) {
   // Si todos los argumentos son cero, retorna ---> "Error".
   // Si no se cumple ninguna de las condiciones anteriores, retorna false.
   // Tu código:
+  let hayNegativos = num1 < 0 || num2 < 0 || num3 < 0;
+  let todosSonCero = num1 === 0 || num2 === 0 || num3 === 0;
+  let num1MayorALosDemas = num1 > num2 && num1 > num3;
+  let num1EsPositivo = num1 > 0;
+  let num3MayorALosDemas = num3 > num1 && num3 > num2;
+
+  if (hayNegativos) {
+    return "Hay negativos";
+  }
+  else if (todosSonCero) {
+    return "Error";
+  }
+  else if (num3MayorALosDemas) {
+    num3 += 1;
+    return num3;
+  }
+  else if (num1MayorALosDemas && num1EsPositivo) {
+    return "Numero 1 es mayor y positivo";
+  }
+  else {
+    return false;
+  }
 }
+
+console.log(operadoresLogicos(3, 2, 1)); // "Numero 1 es mayor y positivo"
+console.log(operadoresLogicos(-3, -4, -5)); // Hay Negativos
+console.log(operadoresLogicos(3, 4, 5)); // 6
+console.log(operadoresLogicos(0, 0, 0)); // "Error"
+console.log(operadoresLogicos(5, 17, 2)); // False
+
+
+
 
 module.exports = operadoresLogicos;

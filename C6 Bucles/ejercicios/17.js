@@ -7,6 +7,21 @@ function colors(color) {
   // Si no es ninguno de esos colores           --> "Color not found".
   // PISTA: utilizar el statement SWITCH.
   // Tu código:
+  let esAlgunColorDeLaLista = color === "blue" || color === "red" || color === "green" || color === "orange";
+  if (esAlgunColorDeLaLista) {
+    return "This is " + color;
+  }
+  else {
+    return "Color not found";
+  }
 }
+
+console.log(colors("blue"));
+console.log(colors("red"));
+console.log(colors("green"));
+console.log(colors("orange"));
+console.log(colors("black"));
+
+
 
 module.exports = colors;

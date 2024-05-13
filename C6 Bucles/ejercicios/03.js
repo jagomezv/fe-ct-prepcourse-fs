@@ -4,13 +4,13 @@ function obtenerMayor(x, y) {
   // Si son iguales, retornar cualquiera de los dos.
   // Tu código:
   let numeroMayor = x;
-  if (x > y) {
+  if (x <= y) {
     numeroMayor = y;
   }
   return numeroMayor;
 }
 
-console.log(obtenerMayor(2, 4));
+console.log(obtenerMayor(10, 5));
 console.log(obtenerMayor(4, 4));
 console.log(obtenerMayor(5, 4));
 module.exports = obtenerMayor;
